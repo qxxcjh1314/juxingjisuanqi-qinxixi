@@ -1,0 +1,22 @@
+.box {
+    width: 370px;
+    margin:200px auto;
+    font-size: 1.2em;
+}
+
+#jisuan {
+    width: 85px;
+    height: 40px;
+    margin-left: 65px;
+    font-size: 1.2em;
+}
+
+input, label {
+    margin: 5px 0;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+span {
+    color: red;
+    font-size: 1.2em;
+}

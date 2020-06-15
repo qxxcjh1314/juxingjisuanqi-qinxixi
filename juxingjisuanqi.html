@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>矩形计算器</title>
+    <link rel="stylesheet" href="style.css" >
+    <script type="text/javascript">
+        function sl(){
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+
+            if(h <= 0 || w<=0){
+                alert("数据不能小于等于0！")
+　        　}
+            else if(isNaN(h)||isNaN(w))
+            {
+                alert("输入的不是合法数值！")
+            }
+            else{
+                document.getElementById("zhouchang").value=parseFloat((2*h+2*w).toFixed(2));
+                document.getElementById("area").value=parseFloat((h*w).toFixed(4));
+            }
+            }
+    </script>
+</head>
+<body>
+<div class="box">
+    <label>宽度:</label>
+    <input type="text" id="width">
+    <span>*</span>
+    <br>
+    <label>高度:</label>
+    <input type="text" id="height">
+    <span>*</span>
+    <br>
+    <button id="jisuan" onclick="sl()" >计算</button>
+    <br>
+    <label>周长:</label>
+    <input type="text" id="zhouchang" disabled="disabled">
+    <br>
+    <label>面积:</label>
+    <input type="text" id="area" disabled="disabled">
+</div>
+</body>
+</html>
